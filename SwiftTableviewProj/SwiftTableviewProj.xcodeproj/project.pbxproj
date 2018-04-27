@@ -22,6 +22,12 @@
 		1076CA8420812F7200F1A06B /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1076CA8020812F7200F1A06B /* CustomTableViewCell.xib */; };
 		1076CA8520812F7200F1A06B /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1076CA8020812F7200F1A06B /* CustomTableViewCell.xib */; };
 		1076CA8620812F7200F1A06B /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1076CA8020812F7200F1A06B /* CustomTableViewCell.xib */; };
+		10CC50572092612A009F7428 /* PetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CC50562092612A009F7428 /* PetModel.swift */; };
+		10CC505920926296009F7428 /* PetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CC505820926296009F7428 /* PetViewModel.swift */; };
+		10CC50672092A732009F7428 /* Holly.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 10CC50632092A731009F7428 /* Holly.jpg */; };
+		10CC50682092A732009F7428 /* Cutie.png in Resources */ = {isa = PBXBuildFile; fileRef = 10CC50642092A731009F7428 /* Cutie.png */; };
+		10CC50692092A732009F7428 /* Joey.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 10CC50652092A731009F7428 /* Joey.jpg */; };
+		10CC506A2092A732009F7428 /* Stuart.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 10CC50662092A731009F7428 /* Stuart.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +63,12 @@
 		1076CA7B20812F1D00F1A06B /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 		1076CA7F20812F7200F1A06B /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		1076CA8020812F7200F1A06B /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
+		10CC50562092612A009F7428 /* PetModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetModel.swift; sourceTree = "<group>"; };
+		10CC505820926296009F7428 /* PetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetViewModel.swift; sourceTree = "<group>"; };
+		10CC50632092A731009F7428 /* Holly.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Holly.jpg; sourceTree = "<group>"; };
+		10CC50642092A731009F7428 /* Cutie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cutie.png; sourceTree = "<group>"; };
+		10CC50652092A731009F7428 /* Joey.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Joey.jpg; sourceTree = "<group>"; };
+		10CC50662092A731009F7428 /* Stuart.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Stuart.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +99,7 @@
 		1076CA4120812E6000F1A06B = {
 			isa = PBXGroup;
 			children = (
+				10CC505A20926CAE009F7428 /* Resources */,
 				1076CA4C20812E6000F1A06B /* SwiftTableviewProj */,
 				1076CA6120812E6000F1A06B /* SwiftTableviewProjTests */,
 				1076CA6C20812E6000F1A06B /* SwiftTableviewProjUITests */,
@@ -108,6 +121,8 @@
 			isa = PBXGroup;
 			children = (
 				1076CA4D20812E6000F1A06B /* AppDelegate.swift */,
+				10CC50562092612A009F7428 /* PetModel.swift */,
+				10CC505820926296009F7428 /* PetViewModel.swift */,
 				1076CA4F20812E6000F1A06B /* ViewController.swift */,
 				1076CA7B20812F1D00F1A06B /* ViewController.xib */,
 				1076CA7F20812F7200F1A06B /* CustomTableViewCell.swift */,
@@ -135,6 +150,17 @@
 				1076CA6F20812E6000F1A06B /* Info.plist */,
 			);
 			path = SwiftTableviewProjUITests;
+			sourceTree = "<group>";
+		};
+		10CC505A20926CAE009F7428 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				10CC50642092A731009F7428 /* Cutie.png */,
+				10CC50632092A731009F7428 /* Holly.jpg */,
+				10CC50652092A731009F7428 /* Joey.jpg */,
+				10CC50662092A731009F7428 /* Stuart.jpg */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,8 +272,12 @@
 			files = (
 				1076CA5820812E6000F1A06B /* LaunchScreen.storyboard in Resources */,
 				1076CA7C20812F1D00F1A06B /* ViewController.xib in Resources */,
+				10CC50692092A732009F7428 /* Joey.jpg in Resources */,
 				1076CA8420812F7200F1A06B /* CustomTableViewCell.xib in Resources */,
+				10CC506A2092A732009F7428 /* Stuart.jpg in Resources */,
 				1076CA5520812E6000F1A06B /* Assets.xcassets in Resources */,
+				10CC50682092A732009F7428 /* Cutie.png in Resources */,
+				10CC50672092A732009F7428 /* Holly.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,8 +307,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				1076CA8120812F7200F1A06B /* CustomTableViewCell.swift in Sources */,
+				10CC505920926296009F7428 /* PetViewModel.swift in Sources */,
 				1076CA5020812E6000F1A06B /* ViewController.swift in Sources */,
 				1076CA4E20812E6000F1A06B /* AppDelegate.swift in Sources */,
+				10CC50572092612A009F7428 /* PetModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
