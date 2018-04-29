@@ -28,7 +28,7 @@ class PetViewModel: NSObject {
     
     public var petRarity:String {
         
-        return String(pet.petRarity.rawValue)
+        return pet.petRarity.rawValue
         
     }
     

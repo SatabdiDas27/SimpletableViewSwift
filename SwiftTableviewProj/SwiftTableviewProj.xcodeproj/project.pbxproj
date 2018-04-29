@@ -24,10 +24,10 @@
 		1076CA8620812F7200F1A06B /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1076CA8020812F7200F1A06B /* CustomTableViewCell.xib */; };
 		10CC50572092612A009F7428 /* PetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CC50562092612A009F7428 /* PetModel.swift */; };
 		10CC505920926296009F7428 /* PetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CC505820926296009F7428 /* PetViewModel.swift */; };
-		10CC50672092A732009F7428 /* Holly.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 10CC50632092A731009F7428 /* Holly.jpg */; };
-		10CC50682092A732009F7428 /* Cutie.png in Resources */ = {isa = PBXBuildFile; fileRef = 10CC50642092A731009F7428 /* Cutie.png */; };
-		10CC50692092A732009F7428 /* Joey.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 10CC50652092A731009F7428 /* Joey.jpg */; };
-		10CC506A2092A732009F7428 /* Stuart.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 10CC50662092A731009F7428 /* Stuart.jpg */; };
+		10CC50772096712B009F7428 /* Stuart.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 10CC50732096712A009F7428 /* Stuart.jpg */; };
+		10CC50782096712B009F7428 /* Joey.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 10CC50742096712A009F7428 /* Joey.jpg */; };
+		10CC50792096712B009F7428 /* Holly.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 10CC50752096712A009F7428 /* Holly.jpg */; };
+		10CC507A2096712B009F7428 /* Cutie.png in Resources */ = {isa = PBXBuildFile; fileRef = 10CC50762096712A009F7428 /* Cutie.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,10 +65,10 @@
 		1076CA8020812F7200F1A06B /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
 		10CC50562092612A009F7428 /* PetModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetModel.swift; sourceTree = "<group>"; };
 		10CC505820926296009F7428 /* PetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetViewModel.swift; sourceTree = "<group>"; };
-		10CC50632092A731009F7428 /* Holly.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Holly.jpg; sourceTree = "<group>"; };
-		10CC50642092A731009F7428 /* Cutie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cutie.png; sourceTree = "<group>"; };
-		10CC50652092A731009F7428 /* Joey.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Joey.jpg; sourceTree = "<group>"; };
-		10CC50662092A731009F7428 /* Stuart.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Stuart.jpg; sourceTree = "<group>"; };
+		10CC50732096712A009F7428 /* Stuart.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Stuart.jpg; path = SwiftTableviewProj/Stuart.jpg; sourceTree = SOURCE_ROOT; };
+		10CC50742096712A009F7428 /* Joey.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Joey.jpg; path = SwiftTableviewProj/Joey.jpg; sourceTree = SOURCE_ROOT; };
+		10CC50752096712A009F7428 /* Holly.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Holly.jpg; path = SwiftTableviewProj/Holly.jpg; sourceTree = SOURCE_ROOT; };
+		10CC50762096712A009F7428 /* Cutie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Cutie.png; path = SwiftTableviewProj/Cutie.png; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,10 +155,10 @@
 		10CC505A20926CAE009F7428 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				10CC50642092A731009F7428 /* Cutie.png */,
-				10CC50632092A731009F7428 /* Holly.jpg */,
-				10CC50652092A731009F7428 /* Joey.jpg */,
-				10CC50662092A731009F7428 /* Stuart.jpg */,
+				10CC50762096712A009F7428 /* Cutie.png */,
+				10CC50752096712A009F7428 /* Holly.jpg */,
+				10CC50742096712A009F7428 /* Joey.jpg */,
+				10CC50732096712A009F7428 /* Stuart.jpg */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -271,13 +271,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				1076CA5820812E6000F1A06B /* LaunchScreen.storyboard in Resources */,
+				10CC50772096712B009F7428 /* Stuart.jpg in Resources */,
+				10CC50782096712B009F7428 /* Joey.jpg in Resources */,
 				1076CA7C20812F1D00F1A06B /* ViewController.xib in Resources */,
-				10CC50692092A732009F7428 /* Joey.jpg in Resources */,
+				10CC50792096712B009F7428 /* Holly.jpg in Resources */,
 				1076CA8420812F7200F1A06B /* CustomTableViewCell.xib in Resources */,
-				10CC506A2092A732009F7428 /* Stuart.jpg in Resources */,
+				10CC507A2096712B009F7428 /* Cutie.png in Resources */,
 				1076CA5520812E6000F1A06B /* Assets.xcassets in Resources */,
-				10CC50682092A732009F7428 /* Cutie.png in Resources */,
-				10CC50672092A732009F7428 /* Holly.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

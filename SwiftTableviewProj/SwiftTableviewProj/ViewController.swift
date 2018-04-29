@@ -8,8 +8,8 @@
 
 import UIKit
 
-class ViewController: UIViewController,UITableViewDataSource {
-   
+class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
+    
     @IBOutlet weak var displayTableView:UITableView!
     var arrayOfPetViewModels:[PetViewModel]!
     override func viewDidLoad() {
@@ -22,7 +22,7 @@ class ViewController: UIViewController,UITableViewDataSource {
     override func viewWillAppear(_ animated: Bool) {
         self.arrayOfPetViewModels = populateDataForPets()
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -35,7 +35,7 @@ class ViewController: UIViewController,UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "swiftCustomCell") as! CustomTableViewCell
-      //  cell.cellLabel.text = "Satabdi"
+        //  cell.cellLabel.text = "Satabdi"
         let viewModelPet = self.arrayOfPetViewModels[indexPath.row] as PetViewModel
         cell.petNameLabel.text = viewModelPet.petName
         cell.petAgeLabel.text = viewModelPet.petAge
@@ -44,7 +44,18 @@ class ViewController: UIViewController,UITableViewDataSource {
         cell.petImage.image = viewModelPet.petImage
         return cell
     }
-
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat
+    {
+        
+        return 109
+        
+    }
+    
+    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 109
+    }
+    
     func populateDataForPets()->[PetViewModel]? {
         // MARK: - Example
         // 1
@@ -53,7 +64,7 @@ class ViewController: UIViewController,UITableViewDataSource {
         let image =  UIImage(named: "Stuart.jpg")!
         let stuart = PetModel(petName: "Stuart", petBirthday: birthday, petRarity: .veryRare, petImage: image)
         
-
+        
         arrayOfPets.append(PetViewModel(pet: stuart))
         
         
@@ -68,7 +79,7 @@ class ViewController: UIViewController,UITableViewDataSource {
         let imageJoey =  UIImage(named: "Joey.jpg")!
         let joey = PetModel(petName: "Joey", petBirthday: birthdayJoey, petRarity: .rare, petImage: imageJoey)
         
-    
+        
         arrayOfPets.append(PetViewModel(pet: joey))
         
         
@@ -76,7 +87,7 @@ class ViewController: UIViewController,UITableViewDataSource {
         let imageCutie =  UIImage(named: "Cutie.png")!
         let cutie = PetModel(petName: "Cutie", petBirthday: birthdayCutie, petRarity: .uncommon, petImage: imageCutie)
         
-
+        
         arrayOfPets.append(PetViewModel(pet: cutie))
         
         

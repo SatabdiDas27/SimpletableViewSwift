@@ -5,60 +5,84 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="swiftCustomCell" rowHeight="109" id="KGk-i7-Jjw" customClass="CustomTableViewCell" customModule="SwiftTableviewProj" customModuleProvider="target">
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="swiftCustomCell" rowHeight="109" id="eD6-MP-Yrj" customClass="CustomTableViewCell" customModule="SwiftTableviewProj" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="429" height="109"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="eD6-MP-Yrj" id="glV-gi-5kN">
                 <rect key="frame" x="0.0" y="0.0" width="429" height="108.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Age:-5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dCk-Vi-Xel" userLabel="petAgeLabel">
-                        <rect key="frame" x="67" y="68" width="125" height="38"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age:-5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xXm-bC-VmC" userLabel="petAgeLabel">
+                        <rect key="frame" x="67" y="85" width="96" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="96" id="bD9-dF-dD4"/>
+                        </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" fixedFrame="YES" text="Rare" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pc5-UJ-IhY" userLabel="petRarityLabel">
-                        <rect key="frame" x="209" y="68" width="114" height="38"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Rare" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JkA-Zo-FBX" userLabel="petRarityLabel">
+                        <rect key="frame" x="180" y="85" width="152" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$50" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DUV-Hc-YBK" userLabel="petAdoptionFeeLabel">
-                        <rect key="frame" x="343" y="68" width="86" height="38"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$50" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FCN-pE-TJF" userLabel="petAdoptionFeeLabel">
+                        <rect key="frame" x="352" y="85" width="77" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="77" id="YSV-4m-7UX"/>
+                        </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LKg-bt-DQT">
-                        <rect key="frame" x="8" y="27" width="51" height="46"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="13z-pd-dUX">
+                        <rect key="frame" x="8" y="27" width="51" height="49"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="49" id="6dx-x3-aQ9"/>
+                            <constraint firstAttribute="width" constant="51" id="bo3-27-y77"/>
+                        </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Joey" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fzd-Tn-XfF" userLabel="petNameLabel">
-                        <rect key="frame" x="68" y="31" width="255" height="38"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Joey" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="loR-RK-TFg" userLabel="petNameLabel">
+                        <rect key="frame" x="68" y="31" width="340" height="41"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
+                <constraints>
+                    <constraint firstItem="xXm-bC-VmC" firstAttribute="firstBaseline" secondItem="FCN-pE-TJF" secondAttribute="firstBaseline" id="11y-cG-nHa"/>
+                    <constraint firstItem="13z-pd-dUX" firstAttribute="leading" secondItem="glV-gi-5kN" secondAttribute="leadingMargin" id="68v-yh-Wtp"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="xXm-bC-VmC" secondAttribute="bottom" constant="-5.5" id="BGz-SJ-gsS"/>
+                    <constraint firstItem="13z-pd-dUX" firstAttribute="centerY" secondItem="loR-RK-TFg" secondAttribute="centerY" id="NTy-XB-ybr"/>
+                    <constraint firstItem="loR-RK-TFg" firstAttribute="leading" secondItem="13z-pd-dUX" secondAttribute="trailing" constant="9" id="QOb-qH-YgG"/>
+                    <constraint firstItem="loR-RK-TFg" firstAttribute="top" secondItem="glV-gi-5kN" secondAttribute="topMargin" constant="23" id="Qmi-Wl-OGP"/>
+                    <constraint firstItem="xXm-bC-VmC" firstAttribute="firstBaseline" secondItem="JkA-Zo-FBX" secondAttribute="firstBaseline" id="Uso-dx-FKB"/>
+                    <constraint firstItem="13z-pd-dUX" firstAttribute="top" secondItem="glV-gi-5kN" secondAttribute="topMargin" constant="19" id="aMy-hD-vTC"/>
+                    <constraint firstItem="xXm-bC-VmC" firstAttribute="leading" secondItem="13z-pd-dUX" secondAttribute="trailing" constant="8" symbolic="YES" id="dg1-wo-snF"/>
+                    <constraint firstAttribute="trailing" secondItem="FCN-pE-TJF" secondAttribute="trailing" id="emx-yE-qX1"/>
+                    <constraint firstItem="JkA-Zo-FBX" firstAttribute="leading" secondItem="xXm-bC-VmC" secondAttribute="trailing" constant="17" id="fZr-WM-Mak"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="loR-RK-TFg" secondAttribute="trailing" constant="13" id="jLS-Np-TXd"/>
+                    <constraint firstItem="FCN-pE-TJF" firstAttribute="leading" secondItem="JkA-Zo-FBX" secondAttribute="trailing" constant="20" id="pYz-XV-6sf"/>
+                    <constraint firstItem="xXm-bC-VmC" firstAttribute="baseline" secondItem="FCN-pE-TJF" secondAttribute="baseline" id="vjW-sT-KTf"/>
+                    <constraint firstItem="xXm-bC-VmC" firstAttribute="baseline" secondItem="JkA-Zo-FBX" secondAttribute="baseline" id="wrY-eH-Uvc"/>
+                </constraints>
             </tableViewCellContentView>
-            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <viewLayoutGuide key="safeArea" id="Fnh-bs-zbu"/>
             <connections>
-                <outlet property="petAdoptionFeeLabel" destination="DUV-Hc-YBK" id="X0b-hS-LLn"/>
-                <outlet property="petAgeLabel" destination="dCk-Vi-Xel" id="17h-2q-Bba"/>
-                <outlet property="petImage" destination="LKg-bt-DQT" id="Uyr-sB-sLN"/>
-                <outlet property="petNameLabel" destination="Fzd-Tn-XfF" id="MYM-Hp-gUd"/>
-                <outlet property="petRarityLabel" destination="Pc5-UJ-IhY" id="NRb-X7-nnH"/>
+                <outlet property="petAdoptionFeeLabel" destination="FCN-pE-TJF" id="DEk-2k-23X"/>
+                <outlet property="petAgeLabel" destination="xXm-bC-VmC" id="tog-tM-e0q"/>
+                <outlet property="petImage" destination="13z-pd-dUX" id="VTZ-pw-OV8"/>
+                <outlet property="petNameLabel" destination="loR-RK-TFg" id="PaR-pV-Lyf"/>
+                <outlet property="petRarityLabel" destination="JkA-Zo-FBX" id="lqe-ud-z3d"/>
             </connections>
             <point key="canvasLocation" x="94.5" y="86.5"/>
         </tableViewCell>
